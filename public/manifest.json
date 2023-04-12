@@ -1,0 +1,20 @@
+{
+<<<<<<< HEAD
+  "short_name": "Westcombetechnologies",
+  "name": "Westcombe technologies ltd",
+=======
+  "short_name": "westcombe Technologies",
+  "name": "westcombe Technologies",
+>>>>>>> a688f795561bc7098b8c69f6c4e2eab3790f3693
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

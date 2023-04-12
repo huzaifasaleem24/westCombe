@@ -1,0 +1,15 @@
+@import "../../../Themes/color.scss";
+
+.blu-btn{
+    @include blue-grad;
+    text-decoration: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: .10s ease-in-out;
+
+    &:hover{
+        @include blue-grad-270;
+        color: white;
+    }
+}

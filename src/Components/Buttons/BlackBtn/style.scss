@@ -1,0 +1,13 @@
+@import "../../../Themes/color.scss";
+
+.blk-btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 12px 30px;
+    border-radius: 5px;
+
+    &:hover{
+        color: white;
+    }
+}

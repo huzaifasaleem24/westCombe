@@ -1,0 +1,189 @@
+@import '../../Themes/color.scss';
+
+
+.nav1{
+    background-color: rgb(255, 255, 255);
+    @include shadow0;
+    position: sticky;
+    top: 0;
+    
+    .logo{
+        width:200px;
+    }
+
+    .nav-list{
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        a{
+            text-decoration:none;
+            color:$dark-grey;
+            font-weight: 600;
+            font-size: 14px;
+            position: relative;
+            transition: all .2s ease;
+
+
+            &::after{
+                content: " ";
+            // background-color: red;
+            @include blue-grad;
+            position: absolute;
+            height: 1.5px;
+            width: 0%;
+            left: 0;
+            transition: all .2s ease;
+            bottom: -6px;
+            }
+
+            &:hover::after{
+                width: 110%;
+            }
+            &:hover{
+                color: $hover ;
+            }
+        }
+    }
+    .nav-list1{
+        // background-color: red;
+        // display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        a{
+            text-decoration:none;
+            color:$dark-grey;
+            font-weight: 600;
+            font-size: 14px;
+            position: relative;
+            transition: all .2s ease;
+
+
+            &::after{
+                content: " ";
+            // background-color: red;
+            @include blue-grad;
+            position: absolute;
+            height: 1.5px;
+            width: 0%;
+            left: 0;
+            transition: all .2s ease;
+            bottom: -6px;
+            }
+
+            &:hover::after{
+                width: 110%;
+            }
+            &:hover{
+                color: $hover ;
+            }
+        }
+    }
+    li{
+        list-style-type: none;
+
+    }
+
+    .hotline{
+        display: flex;
+        // background-color: red;
+
+        .ht{
+            p{
+                padding: 0;
+                margin: 0;
+                margin-left: 20px;
+            }
+            .h5{
+                padding: 0;
+                margin: 0;
+                margin-left: 20px;
+
+            }
+        }
+
+        .icon{
+            // background-color;
+            @include blue-grad;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            margin-top: 5px;
+            border-radius: 50px;
+            svg{
+                fill: white;
+                // padding: 10px;
+            }
+        }
+    }
+    .hotline1{
+        display: flex;
+        position: relative;
+        bottom: -200px;
+        // background-color: red;
+
+        .ht{
+            p{
+                padding: 0;
+                margin: 0;
+                margin-left: 20px;
+            }
+            .h5{
+                padding: 0;
+                margin: 0;
+                margin-left: 20px;
+
+            }
+        }
+
+        .icon{
+            // background-color;
+            @include blue-grad;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+            svg{
+                fill: white;
+                // padding: 10px;
+            }
+        }
+    }
+.sidebar{
+    display: none;
+    font-size: 20px;
+    color: $dark-grey;
+}
+
+
+}
+
+@media (max-width:992px){
+    .nav1 .hotline{
+        display: none;
+    }
+    .nav1 .nav-list{
+        display: none;
+    }
+    .nav1 .sidebar{
+        display: block;
+    }
+    
+}

@@ -1,0 +1,33 @@
+@import "../../Themes/color.scss";
+
+.box{
+a{
+    left: 50px;
+    text-decoration:none;
+    color:$dark-grey;
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+    transition: all .2s ease;
+    padding-left: 50px;
+
+    &::after{
+        content: " ";
+    // background-color: red;
+    @include blue-grad;
+    position: absolute;
+    height: 1.5px;
+    width: 0%;
+    left: 0;
+    transition: all .2s ease;
+    bottom: -6px;
+    }
+
+    &:hover::after{
+        width: 110%;
+    }
+    &:hover{
+        color: $hover ;
+    }
+}
+}

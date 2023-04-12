@@ -1,0 +1,62 @@
+@import "../../Themes/color.scss";
+.footer{
+    // background-image: url("../../../public/Images/footer.webp");
+    background-color: black;
+    height: fit-content;
+
+    .icon{
+        background-color: rgb(47, 47, 47);
+        color: grey;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 36px;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            @include blue-grad;
+            color: white;
+        }
+    }
+    .icons{
+        font-size: 28px;
+        color: $secondary;
+    }
+    .location{
+        font-size: 30px;
+        color: $secondary;
+    }
+    ul li{
+        list-style-type: none;
+        margin: 15px;
+        margin-left: -30px;
+        color: grey;
+    }
+
+    input{
+        background-color: rgb(247, 247, 247);
+        padding: 10px 15px;
+        margin: 10px;
+        margin-left: 0;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    .copy{
+        border-top: 1px solid rgba(141, 140, 140, 0.2);
+    }
+    p{
+        color: grey;
+    }
+    a{
+        text-decoration: none;
+        color: grey;
+    }
+    h5{
+        color: grey;
+    }
+}

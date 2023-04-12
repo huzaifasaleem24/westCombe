@@ -1,0 +1,39 @@
+@import '../../Themes/color.scss';
+
+.tes-cards{
+    .client_card{
+    background-color: rgb(255, 255, 255);
+    padding: 30px 20px 30px 20px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom:20px ;
+    display: flex;
+    .user_img{
+
+        img{
+        clip-path: circle(40%);
+        }
+    }
+    h6{
+        font-size: 13px;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+}
+
+@media(max-width:430px){
+    .tes-cards .client_card{
+        display: block;
+
+        .user_img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+
+}
